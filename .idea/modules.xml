@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/access-app/access-app.iml" filepath="$PROJECT_DIR$/access-app/access-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/access-eureka-server/access-eureka-server.iml" filepath="$PROJECT_DIR$/access-eureka-server/access-eureka-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/access-microservices-apps.iml" filepath="$PROJECT_DIR$/.idea/access-microservices-apps.iml" />
+      <module fileurl="file://$PROJECT_DIR$/config-server/config-server.iml" filepath="$PROJECT_DIR$/config-server/config-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/customer-app/customer-app.iml" filepath="$PROJECT_DIR$/customer-app/customer-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/door-app/door-app.iml" filepath="$PROJECT_DIR$/door-app/door-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zuul-service/zuul-service.iml" filepath="$PROJECT_DIR$/zuul-service/zuul-service.iml" />
+    </modules>
+  </component>
+</project>
