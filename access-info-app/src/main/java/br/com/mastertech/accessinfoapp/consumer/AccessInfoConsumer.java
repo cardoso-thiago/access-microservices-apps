@@ -27,13 +27,17 @@ public class AccessInfoConsumer {
         FileWriter out = new FileWriter(csvFile, true);
         if (csvFile.length() > 0) {
             try (CSVPrinter printer = new CSVPrinter(out, CSVFormat.DEFAULT)) {
-                printer.printRecord(accessInfo.getCustomer(), accessInfo.getDoor(), accessInfo.getHasAccess());
+                addRecord(accessInfo, printer);
             }
         } else {
             String[] headers = {"customer", "door", "access"};
             try (CSVPrinter printer = new CSVPrinter(out, CSVFormat.DEFAULT.withHeader(headers))) {
-                printer.printRecord(accessInfo.getCustomer(), accessInfo.getDoor(), accessInfo.getHasAccess());
+                addRecord(accessInfo, printer);
             }
         }
+    }
+
+    private void addRecord(AccessInfo accessInfo, CSVPrinter printer) throws IOException {
+        printer.printRecord(accessInfo.getCustomer(), accessInfo.getDoor(), accessInfo.getHasAccess());
     }
 }
